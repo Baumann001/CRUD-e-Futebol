@@ -21,10 +21,12 @@ include 'db.php';
                 <a href="read_jogador.php">👥 Ver Jogadores</a>
                 <a href="read_partidas.php">📋 Ver Partidas</a>
                 <a href="create_partida.php">➕ Nova Partida</a>
-                <?php
-                
-               $conn->close();
-               ?>
+                <BUtton type= "button">Sair
+
+                <p><a href="login.php?logout=1">Sair</a></p>
+
+                </BUtton>
+
             </nav>
         </div>
 
