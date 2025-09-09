@@ -8,3 +8,4 @@ create table usuarios (
     );
 
    INSERT INTO usuarios (username, senha) VALUES ('admin','$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
+   INSERT INTO usuarios (username, senha) VALUES ('root','123');
