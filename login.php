@@ -2,7 +2,7 @@
 // login.php
 
 // 1) Conexão
-$mysqli = new mysqli("localhost", "root", "", "login_db");
+$mysqli = new mysqli("localhost", "root", "", "login_futebol");
 if ($mysqli->connect_errno) {
     die("Erro de conexão: " . $mysqli->connect_error);
 }

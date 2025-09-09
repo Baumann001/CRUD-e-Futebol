@@ -1,5 +1,5 @@
-Create DATABASE login_db;
-use login_db;
+Create DATABASE login_futebol;
+use login_futebol;
 
 create table usuarios (
     pk int AUTO_INCREMENT PRIMARY KEY,
