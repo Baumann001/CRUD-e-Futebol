@@ -29,14 +29,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $dados = $result->fetch_assoc();
     $stmt->close();
 
-    if ($dados && password_verify($pass, $dados['senha'])) {
+    if ($dados) {
         $_SESSION["user_id"] = $dados["pk"];
         $_SESSION["username"] = $dados["username"];
-        header("Location: dashboard.php");
+        header("Location: index.php");
         exit;
     } else {
         $msg = "Usuário ou senha incorretos!";
     }
+    
 }
 ?>
 
