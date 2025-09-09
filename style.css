@@ -1,0 +1,249 @@
+body {
+    background: #ffffff; /* White background */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="%23f0f0f0" stroke-width="2"/><line x1="50" y1="10" x2="50" y2="90" stroke="%23f0f0f0" stroke-width="1"/><line x1="10" y1="50" x2="90" y2="50" stroke="%23f0f0f0" stroke-width="1"/></svg>');
+    background-size: 100px 100px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    border: 2px solid #e0e0e0;
+}
+
+h1 {
+    text-align: center;
+    color: #006400; /* Dark green for football theme */
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #006400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #006400;
+    outline: none;
+}
+
+input[type="submit"] {
+    background: #006400; /* Dark green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 100, 0, 0.2);
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background: #004d00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 100, 0, 0.3);
+}
+
+ul {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+li {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #333;
+    padding: 5px;
+}
+
+p {
+    color: #666;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+.btn-editar, .btn-excluir {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-editar {
+    background: #006400;
+    color: white;
+}
+
+.btn-editar:hover {
+    background: #004d00;
+    transform: translateY(-1px);
+}
+
+.btn-excluir {
+    background: #dc3545;
+    color: white;
+}
+
+.btn-excluir:hover {
+    background: #c82333;
+    transform: translateY(-1px);
+}
+
+.usuarios-panel {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.usuarios-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.usuarios-panel th {
+    background: #006400;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.usuarios-panel td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.usuarios-panel tr:hover {
+    background: #f8f9fa;
+}
+
+#menu-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#menu-principal nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+#menu-principal a {
+    background: #006400;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s;
+    border: 2px solid #004d00;
+}
+
+#menu-principal a:hover {
+    background: #004d00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 100, 0, 0.3);
+}
+
+.football-banner {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #006400 0%, #004d00 100%);
+    color: white;
+    border-radius: 12px;
+}
+
+.football-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.success {
+    background: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid #c3e6cb;
+}
+
+.error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid #f5c6cb;
+}
